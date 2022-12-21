@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>game co-vua</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./co_vua.css" />
+        <script src="./co_vua.js"></script>
+    </head>
+    <body id='body' onload="thebodyonload()">
+        <div id="div1">
+            <label id='lb00'></label>
+            <label id='lb01'></label>
+            <label id='lb02'></label>
+            <label id='lb03'></label>
+            <label id='lb04'></label>
+            <label id='lb05'></label>
+            <label id='lb06'></label>
+            <label id='lb07'></label>
+            
+            <label id='lb10'></label>
+            <label id='lb11'></label>
+            <label id='lb12'></label>
+            <label id='lb13'></label>
+            <label id='lb14'></label>
+            <label id='lb15'></label>
+            <label id='lb16'></label>
+            <label id='lb17'></label>
+            
+            <label id='lb20'></label>
+            <label id='lb21'></label>
+            <label id='lb22'></label>
+            <label id='lb23'></label>
+            <label id='lb24'></label>
+            <label id='lb25'></label>
+            <label id='lb26'></label>
+            <label id='lb27'></label>
+            
+            <label id='lb30'></label>
+            <label id='lb31'></label>
+            <label id='lb32'></label>
+            <label id='lb33'></label>
+            <label id='lb34'></label>
+            <label id='lb35'></label>
+            <label id='lb36'></label>
+            <label id='lb37'></label>
+            
+            <label id='lb40'></label>
+            <label id='lb41'></label>
+            <label id='lb42'></label>
+            <label id='lb43'></label>
+            <label id='lb44'></label>
+            <label id='lb45'></label>
+            <label id='lb46'></label>
+            <label id='lb47'></label>
+            
+            <label id='lb50'></label>
+            <label id='lb51'></label>
+            <label id='lb52'></label>
+            <label id='lb53'></label>
+            <label id='lb54'></label>
+            <label id='lb55'></label>
+            <label id='lb56'></label>
+            <label id='lb57'></label>
+            
+            <label id='lb60'></label>
+            <label id='lb61'></label>
+            <label id='lb62'></label>
+            <label id='lb63'></label>
+            <label id='lb64'></label>
+            <label id='lb65'></label>
+            <label id='lb66'></label>
+            <label id='lb67'></label>
+            
+            <label id='lb70'></label>
+            <label id='lb71'></label>
+            <label id='lb72'></label>
+            <label id='lb73'></label>
+            <label id='lb74'></label>
+            <label id='lb75'></label>
+            <label id='lb76'></label>
+            <label id='lb77'></label>
+        </div> 
+        <div id="div2">
+            Phong cấp:
+            <label id='lb80'></label>
+            <label id='lb81'></label>
+            <label id='lb82'></label>
+            <label id='lb83'></label>
+        </div>
+        <div id="div3">
+            --Chiếu--
+        </div>
+        <div id="div4">
+            <img id="setting" src="./setting.jpg" style="width: 60px;height: 60px;"/>
+        </div>
+        <div id="div5" style="left: 800px;opacity: 0;z-index: 0">
+            <div id="div5_1" class="checkbox1">
+            <input type="checkbox" value="1" id="checkbox1Input" name="music" />
+            <label for="checkbox1Input"></label>
+            </div><div id="div5_2">-Music-</div>
+            
+            <div id="div5_3" class="checkbox2">
+                <input type="checkbox" value="1" id="checkbox2Input" name="longtieng" checked=""/>
+            <label for="checkbox2Input"></label>
+            </div><div id="div5_4">G-sounds</div>
+            
+            <div id="div5_5" class="checkbox3">
+                <input type="checkbox" value="1" id="checkbox3Input" name="subnumber"/>
+            <label for="checkbox3Input"></label>
+            </div><div id="div5_6">S-number</div>
+            <div id="div5_7">C-Debug</div>
+            <div id="div5_8">Debug</div>
+            <div id="div5_9">C-Undo</div>
+            <div id="div5_10">Undo</div>
+        </div>
+        <div id="div6">
+            <img id="micro" src="./micro.jpg"/>
+            <div id="div6_1" style="position: absolute;text-align: center;color: deeppink;width: 390px;top: 100px;font-size: 18px"></div>
+        </div>
+        <div id="div7">
+            <div id="div7_1">12345678</div>
+            <div id="div7_2">12345678</div>
+        </div>
+        <audio id="music" controls="">
+            <source id="musicsrc" src="./music1.mp3" type="audio/mpeg"/>
+        </audio>
+        <audio id="audio">
+            <source id="audiosrc" src="" type="audio/mpeg"/>
+        </audio>
+       
+        
+        <textarea id="text" style="width: 342px ;left: 28px;top: 135px ;height: 18px;position: absolute;text-align: center;border-color: #26ca28;border-radius: 15px;z-index: 9"></textarea>
+        <script>
+        
+        var speech=true,myvoice=true,textarea=document.getElementById("text");
+        window.SpeechRecognition=window.webkitSpeechRecognition;
+        const recognition=new SpeechRecognition();
+        recognition.lang = 'vi';
+        recognition.continuous = false;
+        recognition.interimResults=true;
+        
+        document.getElementById("div5_8").onclick=function (){
+            myvoice=false;
+            recognition.stop();
+            setTimeout(function (){
+            myvoice=true;
+            listening();
+            },3500);
+        }
+        recognition.onend= function (){
+            var stringhtml=textarea.innerHTML;
+            document.getElementById("div6_1").innerHTML="";
+            if(stringhtml.toLowerCase().localeCompare("play music.".toLowerCase())==0)
+            {
+                opensetting();
+                document.getElementById("checkbox1Input").checked=true;
+                controlmusic();var rnd=Math.floor(Math.random()*10);
+                if(rnd<4)
+                {
+                    var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./phatnhac1.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+                }
+                else if(rnd>6)
+                {
+                    var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./phatnhac3.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+                }
+                else
+                {
+                    var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./phatnhac2.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+                }
+            }
+            else if(stringhtml.toLowerCase().search("phương anh, bạn có thể giới thiệu một chút về bản thân".toLowerCase())!=-1)
+            {
+                var obj1_1=document.getElementById("audiosrc");
+                obj1_1.src="./gioithieubanthanPA.mp3";obj1_1=document.getElementById("audio");
+                obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().search("tăng âm".toLowerCase())!=-1)
+            {
+                if(document.getElementById("music").volume<1){
+                document.getElementById("music").volume=document.getElementById("music").volume+0.1;
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./tangam.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+                }
+            }
+            else if(stringhtml.toLowerCase().search("giảm âm".toLowerCase())!=-1)
+            {
+                if(document.getElementById("music").volume>=0.1){
+                document.getElementById("music").volume=document.getElementById("music").volume-0.1;
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./giamam.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+                }
+            }
+            else if(stringhtml.toLowerCase().localeCompare("stop music.".toLowerCase())==0)
+            {
+                closesetting();
+                document.getElementById("checkbox1Input").checked=false;
+                controlmusic();
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./tatnhac.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if((stringhtml.toLowerCase().search("open setting".toLowerCase())!=-1)
+                    ||(stringhtml.toLowerCase().localeCompare("mở cài đặt.".toLowerCase())==0))
+            {
+                opensetting();
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./mocaidat.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if((stringhtml.toLowerCase().search("close setting".toLowerCase())!=-1)
+                    ||(stringhtml.toLowerCase().localeCompare("đóng cài đặt.".toLowerCase())==0))
+            {
+                closesetting();
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./dongcaidat.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().search("bài tiếp theo".toLowerCase())!=-1)
+            {
+                var obj1_1=document.getElementById("musicsrc");
+                var kq = parseInt(obj1_1.getAttribute("src").charAt(7))+1;
+                if(kq>9)
+                    kq="./music1.mp3";
+                else
+                    kq="./music"+kq+".mp3";
+                obj1_1.setAttribute("src",kq);
+                obj1_1=document.getElementById("music");
+                obj1_1.load();controlmusic();
+                obj1_1=document.getElementById("audiosrc");
+                obj1_1.src="./baitieptheo.mp3";obj1_1=document.getElementById("audio");
+                obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().search("bài hát trước".toLowerCase())!=-1)
+            {
+                var obj1_1=document.getElementById("musicsrc");
+                var kq = parseInt(obj1_1.getAttribute("src").charAt(7))-1;
+                if(kq<1)
+                    kq="./music9.mp3";
+                else
+                    kq="./music"+kq+".mp3";
+                obj1_1.setAttribute("src",kq);
+                obj1_1=document.getElementById("music");
+                obj1_1.load();controlmusic();
+                obj1_1=document.getElementById("audiosrc");
+                obj1_1.src="./baihattruoc.mp3";obj1_1=document.getElementById("audio");
+                obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().localeCompare("mở chỉ số hỗ trợ.".toLowerCase())==0)
+            {
+                document.getElementById("checkbox3Input").checked=true;
+                subnumber();
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./mosubnumber.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().search("đóng chỉ số hỗ trợ.".toLowerCase())!=-1)
+            {
+                document.getElementById("checkbox3Input").checked=false;
+                subnumber();
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./dongsubnumber.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().localeCompare("mở âm thanh trò chơi.".toLowerCase())==0)
+            {
+                document.getElementById("checkbox2Input").checked=true;
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./moamthanhtrochoi.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().localeCompare("tắt âm thanh trò chơi.".toLowerCase())==0)
+            {
+                document.getElementById("checkbox2Input").checked=false;
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./tatamthanhtrochoi.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().localeCompare("lùi lại.".toLowerCase())==0)
+            {
+                quaylai();
+            }
+            else if(stringhtml.toLowerCase().localeCompare("sửa lỗi ứng dụng.".toLowerCase())==0)
+            {
+                myvoice=false;
+                recognition.stop();
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./sualoiapp.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+                setTimeout(function (){
+                myvoice=true;
+                listening();
+                },3500);
+            }
+            else if(stringhtml.toLowerCase().search("bật chế độ nền tối".toLowerCase())!=-1)
+            {
+                document.getElementById("body").style.backgroundColor="black";
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./batchedonentoi.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else if(stringhtml.toLowerCase().localeCompare("tắt chế độ nền tối.".toLowerCase())==0)
+            {
+                document.getElementById("body").style.backgroundColor="";
+                var obj1_1=document.getElementById("audiosrc");
+                    obj1_1.src="./tatchedonentoi.mp3";obj1_1=document.getElementById("audio");
+                    obj1_1.load();obj1_1.play();
+            }
+            else
+            {
+                stringhtml=stringhtml.replaceAll("a","1").replaceAll("b","2").replaceAll("c","3").replaceAll("d","4");
+                stringhtml=stringhtml.replaceAll("e","5").replaceAll("f","6").replaceAll("h","8");
+                stringhtml=stringhtml.replaceAll("Một","1").replaceAll("gà","7").replaceAll("j","7");
+                stringhtml=stringhtml.replaceAll(".","").replaceAll(",","").replaceAll(" ","");
+                
+                if(Number.isNaN(Number(stringhtml)) != true&&stringhtml.search("0")==-1&&stringhtml.search("9")==-1
+                        &&Number(stringhtml)>999&&stringhtml.length==4)
+                {
+                    var xtamthoi=8-Number(stringhtml.charAt(0)),ytamthoi=Number(stringhtml.charAt(1))-1;
+                    if(a[xtamthoi][ytamthoi]!=0&&(a[xtamthoi][ytamthoi]*denluot)>0){
+                    luuvitri(xtamthoi,ytamthoi);
+                    setTimeout(function (){luuvitri(8-Number(stringhtml.charAt(2)),Number(stringhtml.charAt(3))-1);},500);}
+                }
+            }
+            if(myvoice){
+                listening();
+            }
+        }
+        
+        //
+        recognition.addEventListener('result',e=>{
+            const transcript= Array.from(e.results)
+            .map(result=>result[0])
+            .map(result=>result.transcript)
+            
+            textarea.innerHTML=transcript; 
+        });
+        //
+        
+        
+        document.onkeyup=function(event){
+        if(event.code=='Space'&& event.ctrlKey==false){
+            if(speech==true){
+                document.getElementById("div6_1").innerHTML="PA đang nghe...Hãy nói gì đó vào micro của bạn.";
+                recognition.start();
+            }
+        }
+        if(event.code=='Space'&& event.ctrlKey){
+            myvoice=false;
+            recognition.stop();
+        }
+    }
+        function listening(){
+            if(speech==true){
+                textarea.innerHTML="";
+                document.getElementById("div6_1").innerHTML="PA đang nghe...Hãy nói gì đó vào micro của bạn.";
+                recognition.start();
+            }
+        }
+        setInterval(function (){
+            myvoice=false;
+            recognition.stop();
+            setTimeout(function (){
+                myvoice=true;
+                listening();
+            },2500);
+        }, 120000);
+</script>
+    </body>
+</html>

@@ -1,0 +1,1088 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 24 thg 4, 2022, 19:52:19
+    Author     : lelso
+*/
+
+#div1{
+    width: 1500px;
+    height: 740px;
+    position: absolute;
+    z-index: 5;
+    background-image: url('./bancovua.jpg');
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: 400px 25px;
+}
+#div2{
+    width: 319px;
+    height: 100px;
+    left: 598px;
+    top: 283px;
+    text-align: center;
+    background-color: white;
+    border: black solid ;
+    position: absolute;
+    z-index: 4;
+}
+#div3{
+    width: 319px;
+    height: 75px;
+    left: 598px;
+    top: 340px;
+    text-align: center;
+    background-color: white;
+    font-size: 60px;
+    color: red;
+    border: black solid ;
+    position: absolute;
+    z-index: 3;
+}
+
+.quanxetrang{
+    margin: 8px;
+    width: 60px;
+    height: 60px;
+}
+.quantottrang{
+    margin: 8px;
+    width: 60px;
+    height: 60px;
+}
+.quanmatrang{
+    margin: 8px 7px;
+    width: 60px;
+    height: 60px;
+}
+.quantinhtrang{
+    margin: 8px;
+    width: 60px;
+    height: 60px;
+}
+.quantuongtrang{
+    margin: 8px;
+    width: 60px;
+    height: 60px;
+}
+.quanhautrang{
+    margin: 8px;
+    width: 60px;
+    height: 60px;
+}
+#lb00{
+    
+    width: 78px;
+    height: 78px;
+    
+    position: absolute;
+    left: 437px;
+    top: 62px;
+}
+#lb01{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 516px;
+    top: 62px;
+}
+#lb02{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 595px;
+    top: 62px;
+}
+
+#lb03{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 674px;
+    top: 62px;
+}
+
+#lb04{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 753px;
+    top: 62px;
+}
+
+#lb05{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 832px;
+    top: 62px;
+}
+#lb06{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 911px;
+    top: 62px;
+}
+#lb07{
+    
+    width: 78px;
+    height: 78px;
+        
+    position: absolute;
+    left: 990px;
+    top: 62px;
+}
+#lb10{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 141px;
+}
+#lb11{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 141px;
+}
+#lb12{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 141px;
+}
+#lb13{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 141px;
+}
+#lb14{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 141px;
+}
+#lb15{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 141px;
+}
+#lb16{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 141px;
+}
+#lb17{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 141px;
+}
+
+#lb20{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 220px;
+}
+#lb21{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 220px;
+}
+#lb22{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 220px;
+}
+#lb23{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 220px;
+}
+#lb24{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 220px;
+}
+#lb25{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 220px;
+}
+#lb26{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 220px;
+}
+#lb27{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 220px;
+}
+
+#lb30{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 299px;
+}
+#lb31{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 299px;
+}
+#lb32{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 299px;
+}
+#lb33{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 299px;
+}
+#lb34{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 299px;
+}
+#lb35{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 299px;
+}
+#lb36{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 299px;
+}
+#lb37{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 299px;
+}
+
+#lb40{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 377px;
+}
+#lb41{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 377px;
+}
+#lb42{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 377px;
+}
+#lb43{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 377px;
+}
+#lb44{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 377px;
+}
+#lb45{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 377px;
+}
+#lb46{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 377px;
+}
+#lb47{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 377px;
+}
+
+#lb50{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 456px;
+}
+#lb51{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 456px;
+}
+#lb52{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 456px;
+}
+#lb53{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 456px;
+}
+#lb54{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 456px;
+}
+#lb55{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 456px;
+}
+#lb56{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 456px;
+}
+#lb57{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 456px;
+}
+
+#lb60{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 535px;
+}
+#lb61{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 535px;
+}
+#lb62{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 535px;
+}
+#lb63{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 535px;
+}
+#lb64{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 535px;
+}
+#lb65{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 535px;
+}
+#lb66{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 535px;
+}
+#lb67{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 535px;
+}
+
+#lb70{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 437px;
+    top: 614px;
+}
+#lb71{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 516px;
+    top: 614px;
+}
+#lb72{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 595px;
+    top: 614px;
+}
+#lb73{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 674px;
+    top: 614px;
+}
+#lb74{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 753px;
+    top: 614px;
+}
+#lb75{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 832px;
+    top: 614px;
+}
+#lb76{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 911px;
+    top: 614px;
+}
+#lb77{
+    width: 78px;
+    height: 77px;
+    
+    position: absolute;
+    left: 990px;
+    top: 614px;
+}
+
+.quanxeden{
+    margin: 6px 10px;
+    width: 58px;
+    height: 57px;
+}
+.quantotden{
+    margin: 6px 7px;
+    width: 62px;
+    height: 57px;
+}
+.quanmaden{
+    margin: 7px 7px;
+    width: 60px;
+    height: 56px;
+}
+.quantinhden{
+    margin: 6px 9px;
+    width: 60px;
+    height: 57px;
+}
+.quantuongden{
+    margin: 6px 8px;
+    width: 60px;
+    height: 57px;
+}
+.quanhauden{
+    margin: 6px 8px;
+    width: 60px;
+    height: 57px;
+}
+label{
+    cursor: pointer;
+}
+label:hover{
+    background-color:#66ff66;
+}
+#lb80{
+    width: 78px;
+    height: 77px;
+    border: black solid;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+#lb81{
+    width: 78px;
+    height: 77px;
+    border: black solid;
+    position: absolute;
+    left: 79px;
+    top: 20px;
+}
+#lb82{
+    width: 78px;
+    height: 77px;
+    border: black solid;
+    position: absolute;
+    left: 158px;
+    top: 20px;
+}
+#lb83{
+    width: 78px;
+    height: 77px;
+    border: black solid;
+    position: absolute;
+    left: 237px;
+    top: 20px;
+}
+#setting{
+    left: 1135px;
+    top: 25px;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#micro{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 165px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 9;
+     border-radius: 20px;
+}
+.checkbox1 {
+
+    width: 120px;
+
+    height: 40px;
+
+    background: #333;
+
+    margin: 19px 140px;
+
+    border: gold solid;
+
+    border-radius: 50px;
+
+    position: relative;
+
+}
+.checkbox1:before {
+
+    content: 'On';
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 13px;
+
+    height: 2px;
+
+    color: #26ca28;
+
+    font-size: 16px;
+
+}
+.checkbox1:after {
+
+    content: 'Off';
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 84px;
+
+    height: 2px;
+
+    color: red;
+
+    font-size: 16px;
+
+}
+.checkbox1 label {
+
+    display: block;
+
+    width: 52px;
+
+    height: 22px;
+
+    border-radius: 50px;
+
+
+
+    -webkit-transition: all .5s ease;
+
+    -moz-transition: all .5s ease;
+
+    -o-transition: all .5s ease;
+
+    -ms-transition: all .5s ease;
+
+    transition: all .5s ease;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 9px;
+
+    z-index: 1;
+
+    left: 12px;
+
+    background: #ddd;
+
+}
+.checkbox1 input[type=checkbox]:checked + label {
+
+    left: 60px;
+
+    background: #26ca28;
+
+}
+#div5{
+    border: #ddd solid ;
+    border-radius: 50px;
+    width: 280px;
+    height: 345px;
+    background-color: #99ff99;
+    top: 45px;
+    position: absolute;
+}
+#checkbox1Input{
+    opacity: 0;
+}
+#div5_2{
+    position: absolute;
+    left: 28px;
+    top: 25px;
+    font-size: 25px;
+}
+#music{
+    border: #26ca28 solid ;
+    border-radius: 30px;
+    width: 310px;
+    height: 55px;
+    background-color: #99ff99;
+    top: 405px;
+    left: 700px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+.checkbox2 {
+
+    width: 120px;
+
+    height: 40px;
+
+    background: #333;
+
+    margin: 19px 140px;
+
+    border: gold solid;
+
+    border-radius: 50px;
+
+    position: relative;
+
+}
+.checkbox2:before {
+
+    content: 'On';
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 13px;
+
+    height: 2px;
+
+    color: #26ca28;
+
+    font-size: 16px;
+
+}
+.checkbox2:after {
+
+    content: 'Off';
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 84px;
+
+    height: 2px;
+
+    color: red;
+
+    font-size: 16px;
+
+}
+.checkbox2 label {
+
+    display: block;
+
+    width: 52px;
+
+    height: 22px;
+
+    border-radius: 50px;
+
+
+
+    -webkit-transition: all .5s ease;
+
+    -moz-transition: all .5s ease;
+
+    -o-transition: all .5s ease;
+
+    -ms-transition: all .5s ease;
+
+    transition: all .5s ease;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 9px;
+
+    z-index: 1;
+
+    left: 12px;
+
+    background: #ddd;
+
+}
+.checkbox2 input[type=checkbox]:checked + label {
+
+    left: 60px;
+
+    background: #26ca28;
+
+}
+#checkbox2Input{
+    opacity: 0;
+}
+#div5_4{
+    position: absolute;
+    left: 28px;
+    top: 89px;
+    font-size: 25px;
+}
+#div5_6{
+    position: absolute;
+    left: 28px;
+    top: 152px;
+    font-size: 25px;
+}
+#div5_7{
+    position: absolute;
+    left: 28px;
+    top: 220px;
+    font-size: 25px;
+}
+#div5_8{
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    border-radius: 15px;
+    left: 140px;
+    top: 213px;
+    background-color: darkgrey;
+    font-size: 20px;
+    border: hotpink solid;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 0;
+    color: buttonface;
+}
+#div5_9{
+    position: absolute;
+    left: 28px;
+    top: 286px;
+    font-size: 25px;
+}
+#div5_10{
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    border-radius: 15px;
+    left: 140px;
+    top: 279px;
+    background-color: darkgray;
+    font-size: 20px;
+    border: deeppink solid;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 0;
+    color: buttonface;
+}
+.checkbox3 {
+
+    width: 120px;
+
+    height: 40px;
+
+    background: #333;
+
+    margin: 0px 140px;
+
+    border: gold solid;
+
+    border-radius: 50px;
+
+    position: relative;
+
+}
+.checkbox3:before {
+
+    content: 'On';
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 13px;
+
+    height: 2px;
+
+    color: #26ca28;
+
+    font-size: 16px;
+
+}
+.checkbox3:after {
+
+    content: 'Off';
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 84px;
+
+    height: 2px;
+
+    color: red;
+
+    font-size: 16px;
+
+}
+.checkbox3 label {
+
+    display: block;
+
+    width: 52px;
+
+    height: 22px;
+
+    border-radius: 50px;
+
+
+
+    -webkit-transition: all .5s ease;
+
+    -moz-transition: all .5s ease;
+
+    -o-transition: all .5s ease;
+
+    -ms-transition: all .5s ease;
+
+    transition: all .5s ease;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 9px;
+
+    z-index: 1;
+
+    left: 12px;
+
+    background: #ddd;
+
+}
+.checkbox3 input[type=checkbox]:checked + label {
+
+    left: 60px;
+
+    background: #26ca28;
+
+}
+#checkbox3Input{
+    opacity: 0;
+}
+#div7_1{
+    position: absolute;
+    top: 40px;
+    left: 444px;
+    width: 633px;
+    height: 25px;
+    z-index: 0;
+    opacity: 0;
+    background-color: #6fb5dc;
+    padding: 2px 0 0 0;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 68px;
+    text-indent: 35px;
+}
+#div7_2{
+    position: absolute;
+    top: 701px;
+    left: 444px;
+    width: 633px;
+    height: 27px;
+    z-index: 0;
+    opacity: 0;
+    background-color: #6fb5dc;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 68px;
+    text-indent: 35px;
+}
